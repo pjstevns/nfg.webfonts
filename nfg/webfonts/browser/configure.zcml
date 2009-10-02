@@ -1,0 +1,26 @@
+<configure
+	xmlns="http://namespaces.zope.org/zope"
+	xmlns:browser="http://namespaces.zope.org/browser"
+	i18n_domain="nfg.webfonts">
+
+    <browser:page
+	name="webfonts-controlpanel"
+	for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+	class=".settings.ControlPanel"
+	permission="cmf.ManagePortal"
+	/>
+
+    <adapter
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        provides="nfg.webfonts.interfaces.IWebfontsSettings"
+        factory=".settings.webfonts_settings"
+        />
+
+    <browser:viewlet
+        name="nfg.webfonts.api"
+        manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
+        class="nfg.webfonts.browser.viewlets.WebfontsApiViewlet"
+        permission="zope2.View"
+        />
+
+</configure>
