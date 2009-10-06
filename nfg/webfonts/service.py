@@ -10,3 +10,8 @@ class WebfontsSettings(Persistent):
     apikey=''
 
 
+    def getApikey(self):
+        return self.apikey
+
+    def getHostname(self):
+        return self.hostname

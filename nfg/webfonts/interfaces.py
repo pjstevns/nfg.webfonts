@@ -16,3 +16,12 @@ class IWebfontsSettings(Interface):
             description=_(u"The apikey you have generated for this site"),
             required=True)
 
+
+    def getApikey():
+        """
+        """
+
+    def getHostname():
+        """
+        """
+

@@ -1,3 +1,1 @@
-<script type="text/javascript">
-alert('ok');
-</script>
+<script tal:condition="view/apiurl" type="text/javascript" tal:attributes="src view/apiurl"></script>

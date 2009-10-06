@@ -7,6 +7,7 @@
   <five:registerPackage package="." initialize=".initialize" />
 
   <include package=".browser" />
+  <include file="skins.zcml" />
 
   <genericsetup:registerProfile
       name="default"
@@ -15,5 +16,12 @@
       description='Components for WebFonts.'
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
+
+  <utility
+     provides=".interfaces.IWebfontsSettings"
+     factory=".service.WebfontsSettings"
+     name="nfg.webfonts"
+     />
+
 
 </configure>
