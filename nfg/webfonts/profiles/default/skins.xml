@@ -6,7 +6,7 @@
     directory="nfg.webfonts:skins/webfonts"/>
 
  <skin-path name="*" >
-  <layer name="webfonts" insert-after="custom"/>
+  <layer name="webfonts" insert-after="*"/>
  </skin-path>
 
 </object>

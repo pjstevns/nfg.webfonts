@@ -10,17 +10,17 @@
 	permission="cmf.ManagePortal"
 	/>
 
-    <adapter
-        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-        provides="nfg.webfonts.interfaces.IWebfontsSettings"
-        factory=".settings.webfonts_settings"
-        />
-
     <browser:viewlet
         name="nfg.webfonts.api"
         manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
         class="nfg.webfonts.browser.viewlets.WebfontsApiViewlet"
         permission="zope2.View"
+        />
+
+    <adapter
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        provides="nfg.webfonts.interfaces.IWebfontsSettings"
+        factory=".settings.webfonts_settings"
         />
 
 </configure>

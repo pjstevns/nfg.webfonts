@@ -1,5 +1,5 @@
 
-.wfnt-orig {padding:0;border:none;background:none;}
+.wfnt-orig {padding:0;border:none;background:none !important;}
 .wfnt-text {display:none;visibility: hidden;}
 .wfnt-image {border:none;position: relative;}
 
