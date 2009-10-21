@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<registry>
+  <records interface="nfg.webfonts.interfaces.IWebfontsSettings" />
+  <record interface="nfg.webfonts.interfaces.IWebfontsSettings" field="hostname">
+	<value>http://webfonts.biz</value>
+  </record>
+
+</registry>
+

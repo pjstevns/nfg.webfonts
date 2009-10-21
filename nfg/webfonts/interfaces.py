@@ -17,11 +17,3 @@ class IWebfontsSettings(Interface):
             required=True)
 
 
-    def getApikey():
-        """
-        """
-
-    def getHostname():
-        """
-        """
-
